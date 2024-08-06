@@ -1,0 +1,150 @@
+/* form.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #dark .body{
+    background-color: #333333;
+    color: #ffffff;
+
+  } 
+  
+  #light .body{
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .container {
+    padding: 20px;
+  }
+  
+  #light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  #dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .theme-switcher {
+    margin-bottom: 20px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .theme-form {
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  #dark .theme-form {
+    background-color: #444444;
+    border-color: #555555;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  #dark .form-group input,
+  #dark .form-group textarea {
+    background-color: #555555;
+    color: #ffffff;
+    border-color: #666666;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #dark button[type="submit"] {
+    background-color: #66BB6A;
+  }
+  
+  #dark button[type="submit"]:hover {
+    background-color: #57A05A;
+  }
+  
